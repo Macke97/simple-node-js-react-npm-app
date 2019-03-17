@@ -9,12 +9,12 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('Build') { 
+        stage('Installing') { 
             steps {
                 sh 'yarn' 
             }
         }
-        stage('Test') {
+        stage('Testing') {
             steps {
                 sh './jenkins/scripts/test.sh'
                 // sh './jenkins/scripts/kill.sh'
