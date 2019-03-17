@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh './jenkins/scripts/test.sh'
-                sh './jenkins/scripts/kill.sh'
+                // sh './jenkins/scripts/kill.sh'
             }
         }
         // stage('Deliver') {
